@@ -1,0 +1,7 @@
+package com.example.user_management.exception;
+
+public class DuplicateEmailException extends RuntimeException {
+    public DuplicateEmailException(String msg) {
+        super(msg);
+    }
+}

